@@ -5,7 +5,6 @@ import Data from './data';
 
 function Review(){
     const [index, setIndex] = useState(0)
-    const [random,setRandom] = useState(parseInt(Math.random()*Review.length))
     let {id,name,job,image,text} = Data[index]
 
     console.log(Data[index])
@@ -26,7 +25,8 @@ function Review(){
     }
 
     function randomReview(){
-        setIndex(random)
+        let randomIndex = parseInt(Math.random()*Data.length)
+        setIndex(randomIndex)
     }
 
     return(
