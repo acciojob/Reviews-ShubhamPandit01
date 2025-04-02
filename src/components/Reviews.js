@@ -39,7 +39,7 @@ function Review(){
                 <button className="prev-btn" onClick={prevReview}>Previous</button>
                 <button className="next-btn" onClick={nextReview}>Next</button>
             </div>
-                <button className="random-btn" onClick={randomReview}>Surprise Me</button>
+                <button className="random-btn" onClick={randomReview}>surprise me</button>
       </div>
     )
 }
